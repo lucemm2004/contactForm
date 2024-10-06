@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Formulaire de contact</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Nous contacter</h1>
+
+            <form action="contact.php" method="post">
+                <input
+                    type="text"
+                    name="nom"
+                    id="nom"
+                    placeholder="Votre nom..."
+                    required
+                />
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Votre email..."
+                    required
+                />
+                <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Votre message..."
+                    rows="5"
+                    required
+                ></textarea>
+                <button type="submit" name="submit" id="btnSubmit">
+                    Envoyer
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
